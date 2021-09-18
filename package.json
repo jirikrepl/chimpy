@@ -127,8 +127,7 @@
     "npm-watch": "^0.1.6",
     "quibble": "^0.5.7",
     "shelljs": "^0.7.5",
-    "testdouble": "^3.12.5",
-    "phantomjs-prebuilt": "2.1.15"
+    "testdouble": "^3.12.5"
   },
   "directories": {
     "doc": "docs",
