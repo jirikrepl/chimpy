@@ -116,7 +116,6 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-proposal-export-default-from": "^7.8.3",
     "babel-jest": "^25.1.0",
-    "chromedriver": "^80.0.1",
     "eslint": "^3.12.2",
     "eslint-config-airbnb": "^13.0.0",
     "eslint-plugin-babel": "^4.0.0",
@@ -130,9 +129,6 @@
     "shelljs": "^0.7.5",
     "testdouble": "^3.12.5",
     "phantomjs-prebuilt": "2.1.15"
-  },
-  "peerDependencies": {
-    "chromedriver": "*"
   },
   "directories": {
     "doc": "docs",
