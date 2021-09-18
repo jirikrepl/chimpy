@@ -100,7 +100,6 @@
     "loglevel": "~1.4.0",
     "minimist": "~1.2.0",
     "mocha": "^4.1.0",
-    "phantomjs-prebuilt": "2.1.15",
     "progress": "^1.1.8",
     "request": "^2.88.0",
     "requestretry": "1.5.0",
@@ -129,7 +128,8 @@
     "npm-watch": "^0.1.6",
     "quibble": "^0.5.7",
     "shelljs": "^0.7.5",
-    "testdouble": "^3.12.5"
+    "testdouble": "^3.12.5",
+    "phantomjs-prebuilt": "2.1.15"
   },
   "peerDependencies": {
     "chromedriver": "*"
