@@ -1,5 +1,5 @@
 {
-  "name": "chimpy",
+  "name": "@jirkakrepl/chimpy",
   "version": "3.0.4",
   "description": "Develop acceptance tests & end-to-end tests with realtime feedback.",
   "keywords": [
@@ -18,7 +18,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TheBrainFamily/chimpy"
+    "url": "git+https://github.com/TheBrainFamily/chimpy.git"
   },
   "homepage": "https://github.com/TheBrainFamily/chimpy#readme",
   "bugs": {
@@ -42,8 +42,8 @@
   },
   "main": "dist/lib/chimp.js",
   "bin": {
-    "chimp": "./bin/chimp.js",
-    "chimpy": "./bin/chimpy.js"
+    "chimp": "bin/chimp.js",
+    "chimpy": "bin/chimpy.js"
   },
   "mocha": {
     "files": [
