@@ -1,3 +1,8 @@
+# This code is still in use! Do not delete this repository!
+Used in this package
+https://www.npmjs.com/package/@jirkakrepl/chimpy
+
+# Install
 Package requires chromedriver to be installed as a dependency in your project.
 
 To install both packages:
