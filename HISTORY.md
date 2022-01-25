@@ -1,4 +1,7 @@
-# 3.0.4
+# 3.0.7
+
+* fix chimp crash and test reload if Meteor app reloads
+
 # 2.0.0
 
 * Removed console log, added msg how to install chromedriver (rcywinski) 
