@@ -135,14 +135,15 @@ AutoupdateWatcher.prototype.watch = function (trigger) {
     /*
      * Subscribe to the Meteor Autoupdate Collection
      */
-    self._subscriptionHandle = self._ddpClient.subscribe('meteor_autoupdate_clientVersions', [],
-       function () { // callback when the subscription is ready
-         self._autoupdateCollection = self._ddpClient.collections.meteor_autoupdate_clientVersions;
-         log.debug('[chimp][ddp-watcher] meteor_autoupdate_clientVersions ready:');
-         log.debug('[chimp][ddp-watcher] ' + self._autoupdateCollection);
-         self._checkForUpdate();
-       }
-    );
+    self._subscriptionHandle = self._ddpClient.subscribe('meteor_autoupdate_clientVersions', [], function () {
+      // callback when the subscription is ready
+      setTimeout(() => {
+        self._autoupdateCollection = self._ddpClient.collections.meteor_autoupdate_clientVersions;
+        log.debug('[chimp][ddp-watcher] meteor_autoupdate_clientVersions ready:');
+        log.debug('[chimp][ddp-watcher] ' + self._autoupdateCollection);
+        self._checkForUpdate();
+      }, 1000);
+    });
   });
 };
 
