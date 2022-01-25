@@ -37,17 +37,9 @@ AutoupdateWatcher.prototype._triggerRerun = function () {
 
 AutoupdateWatcher.prototype._didUpdateVersion = function (doc) {
   var self = this;
-  var versionType;
-  var versionKey;
-  if (doc._id.match(/version/) === null) {
-    versionType = 'version-server';
-    versionKey = '_id';
-  } else {
-    versionType = doc._id;
-    versionKey = 'version';
-  }
+  const versionType = doc._id;
   var prevVersion = self._currentVersions[versionType];
-  var newVersion = doc[versionKey];
+  var newVersion = doc.version;
   var isUpdated = prevVersion && prevVersion !== newVersion;
   if (isUpdated) {
     log.debug('[chimp][ddp-watcher] New ' + versionType + ': ' + newVersion);
