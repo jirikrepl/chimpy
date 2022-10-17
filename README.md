@@ -1,15 +1,17 @@
-# This code is still in use! Do not delete this repository!
-Used in this package
-https://www.npmjs.com/package/@jirkakrepl/chimpy
-
 # Install
 Package requires chromedriver to be installed as a dependency in your project.
 
 To install both packages:
 
 ```
-npm i --save-dev chimpy chromedriver
+npm i -g @jirkakrepl/chimpy chromedriver
 ```
+
+Npm package:
+https://www.npmjs.com/package/@jirkakrepl/chimpy
+
+Chromium builds:
+https://chromium.woolyss.com/
 
 # Chimpy with Chromium on MacOS
 It seems that Chrome binary paths is compiled in Chrome driver binary.
