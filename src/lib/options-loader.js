@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const log = require('./log');
 import merge from 'deep-extend';
+require('./babel-register-config');
 
 module.exports = {
   getOptions() {

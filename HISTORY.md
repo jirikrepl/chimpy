@@ -1,3 +1,7 @@
+# 3.0.8
+
+* dynamically transpile chimp config with babel (possibility to use modern JS in chimp config) 
+
 # 3.0.7
 
 * fix chimp crash and test reload if Meteor app reloads
