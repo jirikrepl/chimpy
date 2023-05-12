@@ -22,22 +22,27 @@ Although it is possible, the steps below are a good workaround.
 Install chromedriver as you normally would. 
 Then create empty Google Chrome folder with Chromium launcher script.
 
-    $ mkdir -p /Applications/Google\ Chrome.app/Contents/MacOS/
-    $ cd /Applications/Google\ Chrome.app/Contents/MacOS/
-    $ touch Google\ Chrome
+```shell
+mkdir -p /Applications/Google\ Chrome.app/Contents/MacOS/
+cd /Applications/Google\ Chrome.app/Contents/MacOS/
+touch Google\ Chrome
+```
 
 paste the following into the file "Google Chrome"
+```shell
+#! /bin/sh
 
-    #! /bin/sh
-    cd /Applications/Chromium.app/Contents/MacOS
-    ./Chromium "$@"
+cd /Applications/Chromium.app/Contents/MacOS
+./Chromium "$@"
+```
 
 Then change the permissions
-
-    $ chmod 755 Google\ Chrome
+```shell
+chmod 755 Google\ Chrome
+```
 
 There should not be any configuration needed in chimpy config file.
-Chromedriver binary should fine chromium launcher script on the path: `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome`
+Chromedriver binary should find chromium launcher script on the path: `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome`
 
 # IMPORTANT ANNOUNCEMENT - July 22nd, 2018
 
